@@ -7,12 +7,8 @@ class Code
     "Y" => :yellow
   }
 
-  self.valid_pegs?(arr)
-    arr.all? {|char| self.POSSIBLE_PEGS.include?(char)}
-      return true
-    else
-      false
-    end
+  def self.valid_pegs?(arr)
+    arr.all? {|char| POSSIBLE_PEGS.include?(char.upcase)}
   end
 
 end
