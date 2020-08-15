@@ -1,4 +1,6 @@
 class Code
+  attr_reader :pegs
+
   POSSIBLE_PEGS = 
   {
     "R" => :red,
@@ -18,5 +20,8 @@ class Code
       @pegs = arr.map(&:upcase)
     end
   end
+  
+  
+
 
 end
