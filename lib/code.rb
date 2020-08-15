@@ -21,7 +21,13 @@ class Code
     end
   end
   
-  
+  def self.random(length)
+    arr = pegs.sample(length)
+    arr = Code.new
+    
+
+  end
+
 
 
 end
