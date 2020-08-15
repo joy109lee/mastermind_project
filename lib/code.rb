@@ -11,4 +11,12 @@ class Code
     arr.all? {|char| POSSIBLE_PEGS.include?(char.upcase)}
   end
 
+  def initialize(arr)
+    if !Code.valid_pegs?(arr)
+      raise "error"
+    else
+      @pegs = arr.map(&:upcase)
+    end
+  end
+
 end
