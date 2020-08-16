@@ -41,6 +41,17 @@ class Code
     @pegs.length
   end
   
+  # PART 2
+
+  def num_exact_matches(guess)
+    correct = 0
+    for i in 0...self.length
+      if guess[i] == @pegs[i]
+        correct += 1
+      end
+    end
+    correct
+  end
 
  
 
