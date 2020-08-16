@@ -22,9 +22,11 @@ class Code
   end
   
   def self.random(length)
-    arr = pegs.sample(length)
-    arr = Code.new
-    
+    possible = []
+    for i in 0...POSSIBLE_PEGS.to_a.count
+      possible << POSSIBLE_PEGS.to_a[i][0]
+    end
+    Code.new(possible.sample(length))
 
   end
 
