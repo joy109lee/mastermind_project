@@ -32,6 +32,10 @@ class Code
       @pegs = arr.map(&:upcase)
     end
   end
+
+  def [](idx)
+    @pegs[idx]
+  end
   
   
 
