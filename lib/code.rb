@@ -53,6 +53,15 @@ class Code
     correct
   end
 
+  def num_near_matches(guess)
+    correct = 0
+    
+
+
+
+    
+
+  end
  
 
 end
