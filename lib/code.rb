@@ -13,14 +13,6 @@ class Code
     arr.all? {|char| POSSIBLE_PEGS.include?(char.upcase)}
   end
 
-  def initialize(arr)
-    if !Code.valid_pegs?(arr)
-      raise "error"
-    else
-      @pegs = arr.map(&:upcase)
-    end
-  end
-  
   def self.random(length)
     possible = []
     while possible.count < length
@@ -29,6 +21,20 @@ class Code
     Code.new(possible)
   end
 
+  def self.from_string(str)
+    Code.new(str.split(""))  
+  end
 
+  def initialize(arr)
+    if !Code.valid_pegs?(arr)
+      raise "error"
+    else
+      @pegs = arr.map(&:upcase)
+    end
+  end
+  
+  
+
+ 
 
 end
