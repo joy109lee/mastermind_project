@@ -23,10 +23,11 @@ class Code
   
   def self.random(length)
     possible = []
-    for i in 0...POSSIBLE_PEGS.to_a.count
-      possible << POSSIBLE_PEGS.to_a[i][0]
+    while possible.count < length
+      possible << POSSIBLE_PEGS.to_a[rand(POSSIBLE_PEGS.count)][0]
     end
-    Code.new(possible.sample(length))
+    possible
+    
 
   end
 
