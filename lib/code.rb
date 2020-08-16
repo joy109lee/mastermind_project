@@ -37,6 +37,9 @@ class Code
     @pegs[idx]
   end
   
+  def length
+    @pegs.length
+  end
   
 
  
