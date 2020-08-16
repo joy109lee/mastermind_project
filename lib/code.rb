@@ -26,9 +26,7 @@ class Code
     while possible.count < length
       possible << POSSIBLE_PEGS.to_a[rand(POSSIBLE_PEGS.count)][0]
     end
-    possible
-    
-
+    Code.new(possible)
   end
 
 
