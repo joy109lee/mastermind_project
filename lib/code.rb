@@ -55,12 +55,18 @@ class Code
 
   def num_near_matches(guess)
     correct = 0
+    if guess == @pegs
+      return 0
+    else
+      for i in 0...self.length
+        if @pegs.include?(guess[i])
+          correct += 1
+        end
+      end
+    end
     
 
-
-
-    
-
+    correct
   end
  
 
