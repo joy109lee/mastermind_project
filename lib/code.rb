@@ -65,6 +65,7 @@ class Code
     correct
   end
 
-  def ==(other_code)
-  end
+  # def ==(other_code)
+##
+  # end
 end
