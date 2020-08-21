@@ -68,6 +68,8 @@ class Code
 
     correct
   end
- 
 
+  def ==(other_code)
+    @pegs == other_code
+  end
 end
