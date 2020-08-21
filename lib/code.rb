@@ -66,6 +66,5 @@ class Code
   end
 
   def ==(other_code)
-    @pegs == other_code
   end
 end
