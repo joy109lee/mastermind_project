@@ -13,10 +13,7 @@ class Mastermind
 
     def ask_user_for_guess
         puts "Enter a code"
-        user_code = gets.chomp
-        Code.from_string(user_code)
-        
-
+        user_guess = gets.chomp
+        print_matches(Code.from_string(user_guess))
     end
-
 end

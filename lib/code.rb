@@ -56,9 +56,9 @@ class Code
   def num_near_matches(guess)
     correct = 0
     for i in 0...self.length
-      if @pegs.include?(guess[i]) && @pegs[i] != guess[i]
+      if @pegs[i] != guess[i] && @pegs.include?(guess[i])
         correct += 1
-      end
+      end    
     end
     correct
   end
