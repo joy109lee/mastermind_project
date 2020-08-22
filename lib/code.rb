@@ -66,6 +66,6 @@ class Code
   end
 
   # def ==(other_code)
-##
+  #   self == other_code
   # end
 end
