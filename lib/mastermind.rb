@@ -15,5 +15,6 @@ class Mastermind
         puts "Enter a code"
         user_guess = gets.chomp
         print_matches(Code.from_string(user_guess))
+        Code.from_string(user_guess) == @secret_code
     end
 end
