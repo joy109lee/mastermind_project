@@ -63,7 +63,7 @@ class Code
     correct
   end
 
-  # def ==(other_code)
-  #   self == other_code
-  # end
+  def ==(other_code)
+    @pegs == other_code
+  end
 end
